@@ -24,8 +24,3 @@ flags="-X 'github.com/bytebase/cli/cmd/version.version=${VERSION}'
 go build --tags "release" -ldflags "-w -s $flags" -o ${OUTPUT_BINARY} ./main.go
 
 echo "Completed building bb."
-
-echo ""
-echo "Printing version..."
-
-${OUTPUT_BINARY} version

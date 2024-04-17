@@ -1,0 +1,15 @@
+root = "."
+tmp_dir = ".air"
+
+[build]
+bin = "./.air/bb projects list --url=127.0.0.1:8081 --token=eyJhbGciOiJIUzI1NiIsImtpZCI6InYxIiwidHlwIjoiSldUIn0.eyJuYW1lIjoiRGVtbyIsImlzcyI6ImJ5dGViYXNlIiwic3ViIjoiMTAxIiwiYXVkIjpbImJiLnVzZXIuYWNjZXNzLmRldiJdLCJleHAiOjE3MTM5NTc2OTQsImlhdCI6MTcxMzM1Mjg5NH0.hXl9v0jyl9e2mV--CJwVLanv_KUXvCosBH3C1TTOZIc"
+cmd = """
+  go build \
+  -o ./.air/bb ./main.go"""
+delay = 1000
+exclude_dir = [".air", "build", ".github"]
+exclude_file = []
+exclude_regex = []
+exclude_unchanged = false
+follow_symlink = false
+full_bin = ""
